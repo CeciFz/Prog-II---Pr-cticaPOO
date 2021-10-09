@@ -71,10 +71,8 @@ class Empleados{
             strcpy(nombre,"Cecilia");
             strcpy(apellido,"Fernandez");
             strcpy(domicilio,"El Zorzal 2665");
-        }*/
-
-
-
+        }
+        */
 };
 
 int main(void){
