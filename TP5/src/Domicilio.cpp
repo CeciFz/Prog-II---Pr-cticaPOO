@@ -66,9 +66,6 @@ void Domicilio::Cargar(){
 }
 
 void Domicilio::Mostrar(){
-    cout << "Calle: " << _calle << endl;
-    cout << "Número: " << _numero << endl;
-    cout << "Código Postal: " << _codPostal << endl;
-    cout << "Localidad: " << _localidad << endl;
-    cout << "Piso: " << _piso << endl;
+    cout << _calle << " " << _numero << ", piso " << _piso;
+    cout << ", " << _localidad << ", C.P.: " << _codPostal << endl;
 }

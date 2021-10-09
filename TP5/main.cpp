@@ -13,7 +13,7 @@ using namespace std;
 int main(){
 setlocale(LC_ALL, "Spanish");
 
-    Departamento obj;
+    Local obj;
 
     obj.Mostrar();
     cout  << endl << endl;

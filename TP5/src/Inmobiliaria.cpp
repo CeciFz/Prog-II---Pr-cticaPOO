@@ -41,12 +41,25 @@ void Inmobiliaria::Cargar(){
 }
 
 void Inmobiliaria::Mostrar(){
-    cout << "Dirección: " << endl;
+    cout << "Dirección: ";
     _direccion.Mostrar();
     cout << "Fecha de ingreso: ";
     _fechaIngreso.Mostrar();
     cout << "Fecha de operación: ";
     _fechaOperacion.Mostrar();
     cout << "Superficie total (m2): " << _supTotal << endl;
-    cout << "Tipo de operación (1: venta; 2: alquiler): " << _tipoOperacion << endl;
+    switch(_tipoOperacion){
+        case 1:
+            cout << "Tipo de operación: venta." << endl;
+            break;
+        case 2:
+            cout << "Tipo de operación: alquiler." << endl;
+            break;
+        case 0:
+            cout << "Tipo de operación: No informado" << endl;
+            break;
+        default:
+            cout << "Tipo de operación: No identificado" << endl;
+            break;
+    }
 }
