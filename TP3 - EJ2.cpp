@@ -48,7 +48,7 @@ class Investigadores{
         void SetDNI(int doc) { DNI = doc;}
         void SetNombre(const char *nom) { strcpy(nombre,nom);}
         void SetApellido(const char *ap){ strcpy(apellido,ap);}
-        void SetFechaNac(Fecha f){ f.Cargar();}
+        void SetFechaNac(Fecha f){ fechaNac = f;}                    //{ f.Cargar();}
         int GetDNI() { return DNI; }
         const char *GetNombre(){ return nombre; }
         const char *GetApellido(){ return apellido; }
@@ -82,7 +82,7 @@ class Investigadores{
         }
         //CONTRUCTOR:
         Investigadores(){
-            DNI = 0;
+            DNI = 11111111;
             strcpy(nombre,"no informado");
             strcpy(apellido,"no informado");
             unidAcad = 0;
@@ -99,11 +99,20 @@ setlocale(LC_ALL, "Spanish");
 
     Investigadores obj;
 
-    obj.Mostrar();
+   obj.Mostrar();
     cout << endl << endl;
     obj.Cargar();
     cout << endl << endl;
     obj.Mostrar();
+    cout << endl << endl;
+
+
+    cout << obj.GetDNI() << endl;
+    obj.GetFechaNac(); // Así no hace nada porque FechaNac es un objeto fecha.
+    //  cout << obj.GetFechaNac(); // Así da error porque FechaNac es un objeto Fecha y no puedo
+                                  // hacer cout de 1 objeto (que dentro tiene parámetros y métodos).
+     obj.GetFechaNac().Mostrar();  // pero sí puedo hacer uso de sus métodos.
+
 
 	cout << endl;
 	return 0;
