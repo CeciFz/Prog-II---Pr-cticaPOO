@@ -1,15 +1,17 @@
 #ifndef TERRENO_H
 #define TERRENO_H
+#include "Inmobiliaria.h"
 
-
-class Terreno
-{
+class Terreno:public Inmobiliaria{
+    private:
+        char _mejoras;
     public:
         Terreno();
+        void SetMejoras(char mejoras);
+        char GetMejoras();
+        void Cargar();
+        void Mostrar();
 
-    protected:
-
-    private:
 };
 
 #endif // TERRENO_H
