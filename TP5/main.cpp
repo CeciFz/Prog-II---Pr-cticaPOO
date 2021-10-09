@@ -5,19 +5,16 @@ using namespace std;
 #include "Fecha.h"
 #include "Domicilio.h"
 #include "Inmobiliaria.h"
+#include "Terreno.h"
+#include "Local.h"
+#include "Casa.h"
+#include "Departamento.h"
 
 int main(){
 setlocale(LC_ALL, "Spanish");
 
-    Inmobiliaria obj;
-    /*Fecha f;
-    Domicilio d;
+    Departamento obj;
 
-    f.Mostrar();
-    cout  << endl << endl;
-    d.Mostrar();
-    cout  << endl << endl;
-    cout  << endl << endl;*/
     obj.Mostrar();
     cout  << endl << endl;
     obj.Cargar();

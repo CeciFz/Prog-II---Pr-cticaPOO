@@ -5,6 +5,7 @@ using namespace std;
 #include "Domicilio.h"
 #include "Inmobiliaria.h"
 
+
 Inmobiliaria::Inmobiliaria(){
     _supTotal = 0;
     _tipoOperacion = 0;

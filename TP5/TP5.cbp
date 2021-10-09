@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,21 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Casa.h" />
+		<Unit filename="include/Departamento.h" />
+		<Unit filename="include/Domicilio.h" />
+		<Unit filename="include/Fecha.h" />
+		<Unit filename="include/Inmobiliaria.h" />
+		<Unit filename="include/Local.h" />
+		<Unit filename="include/Terreno.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Casa.cpp" />
+		<Unit filename="src/Departamento.cpp" />
+		<Unit filename="src/Domicilio.cpp" />
+		<Unit filename="src/Fecha.cpp" />
+		<Unit filename="src/Inmobiliaria.cpp" />
+		<Unit filename="src/Local.cpp" />
+		<Unit filename="src/Terreno.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

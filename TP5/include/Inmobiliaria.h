@@ -3,7 +3,7 @@
 
 class Inmobiliaria
 {
-    private:
+    protected:
         Domicilio _direccion;  //calle, número, código postal, localidad, piso, etc.
         Fecha _fechaIngreso;
         Fecha _fechaOperacion;
